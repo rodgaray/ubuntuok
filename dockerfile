@@ -9,7 +9,7 @@ RUN export https_proxy
 RUN apt-get update
 
 # Install Apache2 and PHP5
-RUN apt-get install -y apache2 php5
+RUN apt-get install -y apache2 php5 git python-virtualenv
 
 # Expose ports.
 #   - 80 8080: HTTP
@@ -18,4 +18,5 @@ RUN apt-get install -y apache2 php5
 EXPOSE 80 8080
 EXPOSE 22 22022
 EXPOSE 3306
+
 
