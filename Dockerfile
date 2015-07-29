@@ -1,7 +1,7 @@
 # Proxy settings
 FROM rodgaray/ubuntuok:1
-ENV http_proxy=http://10.75.100.100:3128/
-ENV https_proxy=http://10.75.100.100:3128/
+ENV http_proxy http://10.75.100.100:3128/
+ENV https_proxy http://10.75.100.100:3128/
 RUN export http_proxy
 RUN export https_proxy
 
