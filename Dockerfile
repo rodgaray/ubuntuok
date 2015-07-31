@@ -9,7 +9,7 @@ RUN export https_proxy
 RUN apt-get update
 
 # Install Apache2 and PHP5
-RUN apt-get install -y apache2 php5 git python-virtualenv
+RUN apt-get install -y apache2 php5 git mysql-server
 
 # Expose ports.
 #   - 80 8080: HTTP
